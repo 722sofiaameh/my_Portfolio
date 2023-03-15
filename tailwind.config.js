@@ -10,7 +10,7 @@ module.exports = {
         'mulish': ['Mulish', 'sans-serif'],
       },
       colors : {
-        backroundWhite : '#FFFFFFFF',
+        backGroundWhite : '#FFFFFFFF',
         darkGray : ' #171A1FFF',
         lightGray : ' #323842FF',
         lightBlue: '#3EBDE0FF',

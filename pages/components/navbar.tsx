@@ -1,7 +1,7 @@
 export const ProjectNavbar = () => {
     return (
         <>
-        <div className="flex items-center justify-between container mx-auto pt-6">
+        <nav className="flex items-center justify-between container mx-auto pt-6">
           <div>
               <h1 className="text-3xl font-sora text-darkGray">Sof's-folio</h1>
           </div>
@@ -11,7 +11,7 @@ export const ProjectNavbar = () => {
             <li><a href="/">Contact</a></li>
 
           </ul>
-        </div>
+        </nav>
         </>
     );
 }
@@ -20,7 +20,7 @@ export const ProjectNavbar = () => {
 export const  WorkNavbar= () => {
     return (
         <>
-        <div className="flex items-center justify-between container mx-auto pt-6">
+        <nav className="flex items-center justify-between container mx-auto pt-6">
           <div>
               <h1 className="text-3xl font-sora text-darkGray">Sof's-folio</h1>
           </div>
@@ -30,7 +30,7 @@ export const  WorkNavbar= () => {
             <li><a href="/">Contact</a></li>
 
           </ul>
-        </div>
+        </nav>
         </>
     );
 }
