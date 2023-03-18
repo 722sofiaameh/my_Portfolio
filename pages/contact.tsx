@@ -39,7 +39,7 @@ const Contact = () => {
               <em className="p-2">.Terms</em> <em className="p-2">.Sitemap</em>
             </h1>
           </div>
-          
+         
           <div>
             <h1 className="text-lightGray text-3xl text-center pb-4 font-mulish">Get In Touch</h1>
             <Box
@@ -48,7 +48,6 @@ const Contact = () => {
                 m: 1,
                 width: "80ch",
                 colorScheme: "white",
-                
               }}
               noValidate
               autoComplete="off"
@@ -71,8 +70,9 @@ const Contact = () => {
             <div className="mt-12">
               <textarea
                 placeholder="Describe your project.."
-                className="mt-2 focus:border-sky-500 focus:ring-pinkBackground block rounded-md focus:ring-1 w-full h-24 bg-pinkBackground border shadow-sm border-navPink placeholder-lightGray focus:outline-none pt-2 pl-4"
+                className="mt-2 focus:border-sky-500 focus:ring-pinkBackground block rounded-md focus:ring-1 w-full h-32 bg-pinkBackground border shadow-sm border-navPink placeholder-lightGray focus:outline-none pt-2 pl-4"
               ></textarea>
+              <div className='flex justify-center items-center'><button className="bg-pinkBackground text-backGroundWhite p-2 rounded mt-8 w-32 font-mulish text-lg">Submit</button></div>
             </div>
           </div>
         </div>
