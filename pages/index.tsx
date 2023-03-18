@@ -1,11 +1,8 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import mainImage from "../public/images/sofia.jpg"
-import styles from '@/styles/Home.module.css'
-import { ProjectNavbar } from './components/navbar'
-import Footer from './components/footer'
-
+import Head from "next/head";
+import Image from "next/image";
+import { Inter } from "next/font/google";
+import mainImage from "../public/images/sofia.jpg";
+import { ProjectNavbar } from "./components/navbar";
 
 export default function Home() {
   return (
@@ -16,26 +13,47 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <ProjectNavbar/>
-      <div className='container mx-auto'>
-        <div className='flex mt-20'>
-          <div>
-            <h1 className='font-sora text-6xl w-1/2 text-darkGray'>Hello! I'm Sophie,a FrontEnd Developer</h1>
-            <p className='w-1/2 text-lightGray text-xl pt-10 pb-5'>Hi, I'm Sophia Ameh, and I am a student of the University of Jos with a degree in Science Laboratory Technology. My interests are in Front End Engineering and In fact software engineering as a whole, and I love to create beautiful and performant products with delightful user experiences.Proficient in HTML, CSS, JavaScript, Typescript, Tailwind, Chakra UI, React Js and Next Js</p>
-            <div className='flex justify-start items-center'>
-              <a href='/' className='text-lightBlue text-xl'>More About Me</a>
-              <a href="/">
-                <svg clip-rule="evenodd"  stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className='w-14 fill-lightBlue h-14'><path d="m10.211 7.155c-.141-.108-.3-.157-.456-.157-.389 0-.755.306-.755.749v8.501c0 .445.367.75.755.75.157 0 .316-.05.457-.159 1.554-1.203 4.199-3.252 5.498-4.258.184-.142.29-.36.29-.592 0-.23-.107-.449-.291-.591zm.289 7.563v-5.446l3.522 2.719z" fill-rule="nonzero"/></svg>
+      <ProjectNavbar />
+      <div className=" bg-pinkBackground h-screen">
+        <div className="pt-20 container mx-auto flex justify-around items-center ">
+          <div className="">
+            <Image src={mainImage} alt={"img"} className="rounded-full w-1/2" width={500}/>
+          </div>
+          <div className="">
+            <h1 className="font-sora text-4xl  text-white text-center ">Hi, I am Sophia Ameh</h1>
+            <p className="text-white text-xl pt-4 pb-5">Frontend Developer</p>
+            {/* <p className=" text-white text-xl pt-4 pb-5 w-4/6">
+              Hello! I'm Sophie,a FrontEnd Developer and I am a student of the
+              University of Jos with a degree in Science Laboratory Technology.
+              My interests are in Front End Engineering and In fact software
+              engineering as a whole, and I love to create beautiful and
+              performant products with delightful user experiences.Proficient in
+              HTML, CSS, JavaScript, Typescript, Tailwind, Chakra UI, React Js
+              and Next Js
+            </p> */}
+            {/* <div className="flex justify-start items-center">
+              <a href="/" className="text-lightBlue text-xl">
+                More About Me
               </a>
-            </div>
+              <a href="/">
+                <svg
+                  clip-rule="evenodd"
+                  stroke-linejoin="round"
+                  stroke-miterlimit="2"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-14 fill-lightBlue h-14"
+                >
+                  <path
+                    d="m10.211 7.155c-.141-.108-.3-.157-.456-.157-.389 0-.755.306-.755.749v8.501c0 .445.367.75.755.75.157 0 .316-.05.457-.159 1.554-1.203 4.199-3.252 5.498-4.258.184-.142.29-.36.29-.592 0-.23-.107-.449-.291-.591zm.289 7.563v-5.446l3.522 2.719z"
+                    fill-rule="nonzero"
+                  />
+                </svg>
+              </a>
+            </div> */}
           </div>
-          <div>
-            <Image src={mainImage} alt={'img'}/>
-          </div>
+        </div>
       </div>
-      </div>
-      <Footer/>
-
     </>
-  )
+  );
 }

@@ -1,37 +1,26 @@
+// import "../../styles/globals.css"
+
 export const ProjectNavbar = () => {
-    return (
-        <>
-        <nav className="flex items-center justify-between container mx-auto pt-6">
-          <div>
-              <h1 className="text-3xl font-sora text-darkGray">Sof's-folio</h1>
-          </div>
-          <ul className="flex gap-10 items-center font-mulish text-lg text-lightGray">
-            <li><a href="/">Projects</a></li>
-            <li><a href="/">About Me</a></li>
-            <li><a href="/">Contact</a></li>
-
-          </ul>
-        </nav>
-        </>
-    );
-}
- 
-
-export const  WorkNavbar= () => {
-    return (
-        <>
-        <nav className="flex items-center justify-between container mx-auto pt-6">
-          <div>
-              <h1 className="text-3xl font-sora text-darkGray">Sof's-folio</h1>
-          </div>
-          <ul className="flex gap-10 items-center font-mulish text-lg text-lightGray">
-            <li><a href="/">Work</a></li>
-            <li><a href="/">About Me</a></li>
-            <li><a href="/">Contact</a></li>
-
-          </ul>
-        </nav>
-        </>
-    );
-}
- 
+  return (
+    <div className="bg-navPink">
+      <nav className="flex items-center justify-between container mx-auto pt-6 pb-6">
+        <div className="flex justify-center items-center gap-10">
+          <h1 className="text-3xl font-Pattaya text-darkGray ">Sophia Ameh </h1>
+          
+          <div className="loader"></div>
+        </div>
+        <ul className="flex gap-10 items-center font-mulish text-lg text-white">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/">Service</a>
+          </li>
+          <li>
+            <a href="/contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  );
+};
