@@ -11,7 +11,7 @@ const Contact = () => {
     <div className="">
       <ProjectNavbar />
       <div className=" pt-28 pb-28 bg-pinkBackground h-screen">
-        <div className="flex container mx-auto text-backGroundWhite items-center justify-center">
+        <div className="flex container mx-auto text-backGroundWhite items-center justify-center gap-10">
           <div className="w-1/2">
             <h1 className="text-5xl font-sora text-lightGray">
               Say Hello and let's work together !

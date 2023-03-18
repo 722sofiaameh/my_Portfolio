@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import mainImage from "../public/images/sofia.jpg";
+import AboutImage from "../public/images/About_Image.jpg"
 import { ProjectNavbar } from "./components/navbar";
 
 export default function Home() {
@@ -14,48 +15,87 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <ProjectNavbar />
-      <div className=" bg-pinkBackground h-screen">
-        <div className="pt-20 container mx-auto flex justify-around items-center ">
-          
-          <div className="">
-            <h1 className="font-sora text-4xl  text-white text-center ">Hi, I am Sophia Ameh</h1>
-            <p className="text-white text-xl pt-4 pb-5">Frontend Developer</p>
-            {/* <p className=" text-white text-xl pt-4 pb-5 w-4/6">
-              Hello! I'm Sophie,a FrontEnd Developer and I am a student of the
-              University of Jos with a degree in Science Laboratory Technology.
-              My interests are in Front End Engineering and In fact software
-              engineering as a whole, and I love to create beautiful and
-              performant products with delightful user experiences.Proficient in
-              HTML, CSS, JavaScript, Typescript, Tailwind, Chakra UI, React Js
-              and Next Js
-            </p> */}
-            {/* <div className="flex justify-start items-center">
-              <a href="/" className="text-lightBlue text-xl">
-                More About Me
-              </a>
-              <a href="/">
-                <svg
-                  clip-rule="evenodd"
-                  stroke-linejoin="round"
-                  stroke-miterlimit="2"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="w-14 fill-lightBlue h-14"
-                >
-                  <path
-                    d="m10.211 7.155c-.141-.108-.3-.157-.456-.157-.389 0-.755.306-.755.749v8.501c0 .445.367.75.755.75.157 0 .316-.05.457-.159 1.554-1.203 4.199-3.252 5.498-4.258.184-.142.29-.36.29-.592 0-.23-.107-.449-.291-.591zm.289 7.563v-5.446l3.522 2.719z"
-                    fill-rule="nonzero"
-                  />
-                </svg>
-              </a>
-            </div> */}
+      <div className=" bg-pinkBackground ">
+        <div className="pt-20 pb-20 container mx-auto flex gap-80 items-center ">
+          <div className=''>
+            <h1 className="font-sora text-5xl  text-white text-center ">
+              Hi, I am Sophia Ameh
+            </h1>
+            <p className="text-white text-2xl font-sora pt-4 pb-5">Frontend Developer</p>
+            <div className='flex gap-4'>
+              <button className="btn">Download CV
+              </button>
+              <button className='btn_Learn btn'>Learn More</button>
+            </div>
             
           </div>
           <div className="">
-          <Image src={mainImage} alt={"img"} className="rounded-full " width={300} height={200}/>
+            <Image
+              src={mainImage}
+              alt={"img"}
+              className="rounded-tr-3xl rounded-bl-3xl"
+              width={300}
+            />
           </div>
         </div>
       </div>
+      <div className="flex mx-auto container justify-center items-center gap-12">
+        <div className="mx-auto container mt-20 border-8 border-navPink w-1/2 rounded">
+          <Image src={AboutImage} alt='img'/>
+          </div>
+          <div className="w-1/2">
+            <h1 className="text-lightGray text-center font-sora text-5xl ">About Me</h1>
+            <p className=" text-lightGray text-xl pt-4 pb-5 text-center ">
+                  Hello! I'm Sophie, A FrontEnd Developer and I am a student of the
+                  University of Jos with a degree in Science Laboratory Technology.
+                  My interests are in Front End Engineering and In fact software
+                  engineering as a whole, and I love to create beautiful and
+                  performant products with delightful user experiences.Proficient in
+                  HTML, CSS, JavaScript, Typescript, Tailwind, Chakra UI, React Js
+                  and Next Js
+                </p>
+          </div>
+          
+      </div>
+      <div className="flex container mx-auto text-center items-center justify-center pt-24 gap-20 pb-8">
+            <div>
+              <div className="flex justify-center items-center">
+                <div className="bg-pinkBackground rounded-full w-8 h-8 flex justify-center items-center">
+                  <div className='bg-white w-2 h-2  rounded-full'></div>
+                </div>
+              </div>
+              <h2>Full Name</h2>
+              <p>Sophia Ameh</p>
+            </div>
+            <div>
+              <div className="flex justify-center items-center">
+                <div className="bg-pinkBackground rounded-full w-8 h-8 flex justify-center items-center">
+                  <div className='bg-white w-2 h-2  rounded-full'></div>
+                </div>
+              </div>
+              <h2>Email</h2>
+              <p>Sofiagabriel722@gmail.com</p>
+            </div>
+            
+            <div>
+              <div className="flex justify-center items-center">
+                <div className="bg-pinkBackground rounded-full w-8 h-8 flex justify-center items-center">
+                  <div className='bg-white w-2 h-2  rounded-full'></div>
+                </div>
+              </div>
+              <h2>Phone Number</h2>
+              <p>08099049234</p>
+            </div>
+            <div className=''>
+              <div className="flex justify-center items-center ">
+                <div className="bg-pinkBackground rounded-full w-8 h-8 flex justify-center items-center">
+                  <div className='bg-white w-2 h-2  rounded-full'></div>
+                </div>
+              </div>
+              <h2>Twitter</h2>
+              <p>@Sophia_Ameh</p>
+            </div>
+          </div>
     </>
   );
 }
