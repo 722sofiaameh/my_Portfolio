@@ -1,17 +1,19 @@
 import Instagram from "../public/images/instagram.png";
 import LinkedIn from "../public/images/LinkedIn.png";
 import email from "../public/images/email.png";
-import Image from "next/image"; 
+import Image from "next/image";
 import { ProjectNavbar } from "./components/navbar";
+import TextField from "@mui/material/TextField";
+import Box from "@mui/material/Box";
 
 const Contact = () => {
-    return (
-        <div className="">
-        <ProjectNavbar/>
-        <div className=" pt-28 pb-28 bg-pinkBackground h-screen">
-        <div className="flex container mx-auto text-backGroundWhite items-center">
+  return (
+    <div className="">
+      <ProjectNavbar />
+      <div className=" pt-28 pb-28 bg-pinkBackground h-screen">
+        <div className="flex container mx-auto text-backGroundWhite items-center justify-center">
           <div className="w-1/2">
-            <h1 className="text-5xl font-sora text-white">
+            <h1 className="text-5xl font-sora text-lightGray">
               Say Hello and let's work together !
             </h1>
             <ul className="flex pt-10 gap-14">
@@ -31,24 +33,52 @@ const Contact = () => {
                 </a>
               </li>
             </ul>
-            <h1 className="pt-8 font-mulish"> &copy; 2023 Brand,Inc <em className="p-2">.Privacy</em> <em className="p-2">.Terms</em> <em className="p-2">.Sitemap</em></h1>
+            <h1 className="pt-8 font-mulish">
+              {" "}
+              &copy; 2023 Sophie,Inc <em className="p-2">.Privacy</em>{" "}
+              <em className="p-2">.Terms</em> <em className="p-2">.Sitemap</em>
+            </h1>
           </div>
-          <form className="font-mulish">
-                <label>Email:<input type="email" name="" id="" placeholder="Your email address" className="mt-1 pl-4 py-2  bg-white border shadow-sm border-slate-300 placeholder-slate-400  focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-96 rounded-md focus:ring-1"/></label>
-               
-                <div className="mt-12">
-                    <label className="">Input you message:
-                        <textarea placeholder="Describe your project" className="mt-2 focus:border-sky-500 focus:ring-sky-500 block rounded-md focus:ring-1 w-full h-24 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none pt-2 pl-4">
-                        </textarea>
-                    </label>
-                </div>
-          <button className="bg-white text-backGroundWhite p-2 rounded mt-8 w-32 font-mulish text-lg">Submit</button>
+          
+          <div>
+            <h1 className="text-lightGray text-3xl text-center pb-4 font-mulish">Get In Touch</h1>
+            <Box
+              component="form"
+              sx={{
+                m: 1,
+                width: "80ch",
+                colorScheme: "white",
+                
+              }}
+              noValidate
+              autoComplete="off"
+              className="grid grid-cols-2 gap-10 items-center justify-center"
+            >
+              <TextField id="standard-basic" label="Name" variant="standard" />
+              <TextField
+                id="standard-basic"
+                label="Last Name"
+                variant="standard"
+              />
+              <TextField id="standard-basic" label="Email" variant="standard" />
+              <TextField
+                id="standard-basic"
+                label="Phone Number"
+                variant="standard"
+              />
+            </Box>
 
-          </form>
+            <div className="mt-12">
+              <textarea
+                placeholder="Describe your project.."
+                className="mt-2 focus:border-sky-500 focus:ring-pinkBackground block rounded-md focus:ring-1 w-full h-24 bg-pinkBackground border shadow-sm border-navPink placeholder-lightGray focus:outline-none pt-2 pl-4"
+              ></textarea>
+            </div>
+          </div>
         </div>
       </div>
-        </div>
-    );
-}
- 
+    </div>
+  );
+};
+
 export default Contact;

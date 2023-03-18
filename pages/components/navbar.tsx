@@ -5,7 +5,7 @@ export const ProjectNavbar = () => {
     <div className="bg-navPink">
       <nav className="flex items-center justify-between container mx-auto pt-6 pb-6">
         <div className="flex justify-center items-center gap-10">
-          <h1 className="text-3xl font-Pattaya text-darkGray ">Sophia Ameh </h1>
+          <h1 className="text-3xl font-Pattaya text-lightGray ">Sophia Ameh </h1>
           
           <div className="loader"></div>
         </div>

@@ -16,9 +16,7 @@ export default function Home() {
       <ProjectNavbar />
       <div className=" bg-pinkBackground h-screen">
         <div className="pt-20 container mx-auto flex justify-around items-center ">
-          <div className="">
-            <Image src={mainImage} alt={"img"} className="rounded-full w-1/2" width={500}/>
-          </div>
+          
           <div className="">
             <h1 className="font-sora text-4xl  text-white text-center ">Hi, I am Sophia Ameh</h1>
             <p className="text-white text-xl pt-4 pb-5">Frontend Developer</p>
@@ -51,6 +49,10 @@ export default function Home() {
                 </svg>
               </a>
             </div> */}
+            
+          </div>
+          <div className="">
+          <Image src={mainImage} alt={"img"} className="rounded-full " width={300} height={200}/>
           </div>
         </div>
       </div>
