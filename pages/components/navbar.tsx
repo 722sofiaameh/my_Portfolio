@@ -1,4 +1,4 @@
-// import "../../styles/globals.css"
+import Link from "next/link";
 
 export const ProjectNavbar = () => {
   return (
@@ -11,13 +11,13 @@ export const ProjectNavbar = () => {
         </div>
         <ul className="flex gap-10 items-center font-mulish text-lg text-white">
           <li>
-            <a href="/">Home</a>
+            <Link href="/">Home</Link>
           </li>
           <li>
-            <a href="/">Service</a>
+            <Link href="/">Service</Link>
           </li>
           <li>
-            <a href="/contact">Contact</a>
+            <Link href="/contact">Contact</Link>
           </li>
         </ul>
       </nav>

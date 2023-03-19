@@ -46,7 +46,7 @@ export default function Home() {
           <div className="w-1/2">
             <h1 className="text-lightGray text-center font-sora text-5xl ">About Me</h1>
             <p className=" text-lightGray text-xl pt-4 pb-5 text-center ">
-                  Hello! I'm Sophie, A FrontEnd Developer and I am a student of the
+                  Hello! I&apos;m Sophie, A FrontEnd Developer and also I am a student of the
                   University of Jos with a degree in Science Laboratory Technology.
                   My interests are in Front End Engineering and In fact software
                   engineering as a whole, and I love to create beautiful and
@@ -64,8 +64,8 @@ export default function Home() {
                   <div className='bg-white w-2 h-2  rounded-full'></div>
                 </div>
               </div>
-              <h2>Full Name</h2>
-              <p>Sophia Ameh</p>
+              <h2 className="text-2xl font-sora mt-4">Full Name</h2>
+              <p className="text-xl font-sora mt-2">Sophia Ameh</p>
             </div>
             <div>
               <div className="flex justify-center items-center">
@@ -73,8 +73,8 @@ export default function Home() {
                   <div className='bg-white w-2 h-2  rounded-full'></div>
                 </div>
               </div>
-              <h2>Email</h2>
-              <p>Sofiagabriel722@gmail.com</p>
+              <h2 className="text-2xl font-sora mt-4">Email</h2>
+              <p className="text-xl font-sora mt-2">Sofiagabriel722@gmail.com</p>
             </div>
             
             <div>
@@ -83,8 +83,8 @@ export default function Home() {
                   <div className='bg-white w-2 h-2  rounded-full'></div>
                 </div>
               </div>
-              <h2>Phone Number</h2>
-              <p>08099049234</p>
+              <h2 className="text-2xl font-sora mt-4">Phone Number</h2>
+              <p className="text-xl font-sora mt-2">08099049234</p>
             </div>
             <div className=''>
               <div className="flex justify-center items-center ">
@@ -92,8 +92,8 @@ export default function Home() {
                   <div className='bg-white w-2 h-2  rounded-full'></div>
                 </div>
               </div>
-              <h2>Twitter</h2>
-              <p>@Sophia_Ameh</p>
+              <h2 className='text-2xl font-sora mt-2'>Twitter</h2>
+              <p className="text-xl font-sora mt-2">@Sophia_Ameh</p>
             </div>
           </div>
     </>
