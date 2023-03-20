@@ -1,4 +1,4 @@
-import Instagram from "../public/images/instagram.png";
+import Instagram from "../public/images/Instagram.png";
 import LinkedIn from "../public/images/LinkedIn.png";
 import email from "../public/images/email.png";
 import Image from "next/image";
