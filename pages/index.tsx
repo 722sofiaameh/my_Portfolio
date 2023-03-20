@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import mainImage from "../public/images/sofia.jpg";
-import AboutImage from "../public/images/About_Image.jpg"
+import AboutImage from "../public/images/About_Image.jpg";
 import { ProjectNavbar } from "./components/navbar";
 
 export default function Home() {
@@ -17,17 +17,17 @@ export default function Home() {
       <ProjectNavbar />
       <div className=" bg-pinkBackground ">
         <div className="pt-20 pb-20 container mx-auto flex gap-80 items-center ">
-          <div className=''>
+          <div className="">
             <h1 className="font-sora text-5xl  text-white text-center ">
               Hi, I am Sophia Ameh
             </h1>
-            <p className="text-white text-2xl font-sora pt-4 pb-5">Frontend Developer</p>
-            <div className='flex gap-4'>
-              <button className="btn">Download CV
-              </button>
-              <button className='btn_Learn btn'>Learn More</button>
+            <p className="text-white text-2xl font-sora pt-4 pb-5">
+              Frontend Developer
+            </p>
+            <div className="flex gap-4">
+              <button className="btn">Download CV</button>
+              <button className="btn_Learn btn">Learn More</button>
             </div>
-            
           </div>
           <div className="">
             <Image
@@ -41,61 +41,82 @@ export default function Home() {
       </div>
       <div className="flex mx-auto container justify-center items-center gap-12">
         <div className="mx-auto container mt-20 border-8 border-navPink w-1/2 rounded">
-          <Image src={AboutImage} alt='img'/>
-          </div>
-          <div className="w-1/2">
-            <h1 className="text-lightGray text-center font-sora text-5xl ">About Me</h1>
-            <p className=" text-lightGray text-xl pt-4 pb-5 text-center ">
-                  Hello! I&apos;m Sophie, A FrontEnd Developer and also I am a student of the
-                  University of Jos with a degree in Science Laboratory Technology.
-                  My interests are in Front End Engineering and In fact software
-                  engineering as a whole, and I love to create beautiful and
-                  performant products with delightful user experiences.Proficient in
-                  HTML, CSS, JavaScript, Typescript, Tailwind, Chakra UI, React Js
-                  and Next Js
-                </p>
-          </div>
-          
+          <Image src={AboutImage} alt="img" />
+        </div>
+        <div className="w-1/2">
+          <h1 className="text-lightGray text-center font-sora text-5xl ">
+            About Me
+          </h1>
+          <p className=" text-lightGray text-xl pt-4 pb-5 text-center ">
+            Hello! I&apos;m Sophie, A FrontEnd Developer and also I am a student
+            of the University of Jos with a degree in Science Laboratory
+            Technology. My interests are in Front End Engineering and In fact
+            software engineering as a whole, and I love to create beautiful and
+            performant products with delightful user experiences.Proficient in
+            HTML, CSS, JavaScript, Typescript, Tailwind, Chakra UI, React Js and
+            Next Js
+          </p>
+        </div>
       </div>
       <div className="flex container mx-auto text-center items-center justify-center pt-24 gap-20 pb-8">
-            <div>
-              <div className="flex justify-center items-center">
-                <div className="bg-pinkBackground rounded-full w-8 h-8 flex justify-center items-center">
-                  <div className='bg-white w-2 h-2  rounded-full'></div>
-                </div>
-              </div>
-              <h2 className="text-2xl font-sora mt-4">Full Name</h2>
-              <p className="text-xl font-sora mt-2">Sophia Ameh</p>
-            </div>
-            <div>
-              <div className="flex justify-center items-center">
-                <div className="bg-pinkBackground rounded-full w-8 h-8 flex justify-center items-center">
-                  <div className='bg-white w-2 h-2  rounded-full'></div>
-                </div>
-              </div>
-              <h2 className="text-2xl font-sora mt-4">Email</h2>
-              <p className="text-xl font-sora mt-2">Sofiagabriel722@gmail.com</p>
-            </div>
-            
-            <div>
-              <div className="flex justify-center items-center">
-                <div className="bg-pinkBackground rounded-full w-8 h-8 flex justify-center items-center">
-                  <div className='bg-white w-2 h-2  rounded-full'></div>
-                </div>
-              </div>
-              <h2 className="text-2xl font-sora mt-4">Phone Number</h2>
-              <p className="text-xl font-sora mt-2">08099049234</p>
-            </div>
-            <div className=''>
-              <div className="flex justify-center items-center ">
-                <div className="bg-pinkBackground rounded-full w-8 h-8 flex justify-center items-center">
-                  <div className='bg-white w-2 h-2  rounded-full'></div>
-                </div>
-              </div>
-              <h2 className='text-2xl font-sora mt-2'>Twitter</h2>
-              <p className="text-xl font-sora mt-2">@Sophia_Ameh</p>
+        <div>
+          <div className="flex justify-center items-center">
+            <div className="bg-pinkBackground rounded-full w-8 h-8 flex justify-center items-center">
+              <div className="bg-white w-2 h-2  rounded-full"></div>
             </div>
           </div>
+          <h2 className="text-2xl font-sora mt-4">Full Name</h2>
+          <p className="text-xl font-sora mt-2">Sophia Ameh</p>
+        </div>
+        <div>
+          <div className="flex justify-center items-center">
+            <div className="bg-pinkBackground rounded-full w-8 h-8 flex justify-center items-center">
+              <div className="bg-white w-2 h-2  rounded-full"></div>
+            </div>
+          </div>
+          <h2 className="text-2xl font-sora mt-4">Email</h2>
+          <p className="text-xl font-sora mt-2">Sofiagabriel722@gmail.com</p>
+        </div>
+
+        <div>
+          <div className="flex justify-center items-center">
+            <div className="bg-pinkBackground rounded-full w-8 h-8 flex justify-center items-center">
+              <div className="bg-white w-2 h-2  rounded-full"></div>
+            </div>
+          </div>
+          <h2 className="text-2xl font-sora mt-4">Phone Number</h2>
+          <p className="text-xl font-sora mt-2">08099049234</p>
+        </div>
+        <div className="">
+          <div className="flex justify-center items-center ">
+            <div className="bg-pinkBackground rounded-full w-8 h-8 flex justify-center items-center">
+              <div className="bg-white w-2 h-2  rounded-full"></div>
+            </div>
+          </div>
+          <h2 className="text-2xl font-sora mt-2">Twitter</h2>
+          <p className="text-xl font-sora mt-2">@Sophia_Ameh</p>
+        </div>
+      </div>
+      <div className="bg-pinkBackground">
+        <h1 className="text-white text-4xl text-center pt-12 font-mulish">
+          What I Do
+        </h1>
+        <div className="flex container mx-auto justify-center items-center gap-10 mt-20 pb-10">
+          <div className="card">
+            <h2 className="font-sora text-xl text-lightGray">
+              Software Development
+            </h2>
+          </div>
+          <div className="card">
+            <h2 className="font-sora text-xl text-lightGray">
+              Web Development
+            </h2>
+          </div>
+          <div className="card">
+            <h2 className="font-sora text-xl text-lightGray">Web Design</h2>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
