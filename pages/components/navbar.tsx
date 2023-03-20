@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export const ProjectNavbar = () => {
+ const ProjectNavbar = () => {
   return (
     <div className="bg-navPink">
       <nav className="flex items-center justify-between container mx-auto pt-6 pb-6">
@@ -24,3 +24,4 @@ export const ProjectNavbar = () => {
     </div>
   );
 };
+export default ProjectNavbar;

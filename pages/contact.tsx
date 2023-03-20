@@ -2,7 +2,7 @@ import Instagram from "../public/images/instagram.png";
 import LinkedIn from "../public/images/LinkedIn.png";
 import email from "../public/images/email.png";
 import Image from "next/image";
-import { ProjectNavbar } from "./components/navbar";
+import ProjectNavbar  from "./components/navbar";
 import TextField from "@mui/material/TextField";
 import Box from "@mui/material/Box";
 

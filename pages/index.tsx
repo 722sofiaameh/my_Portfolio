@@ -1,9 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
-import { Inter } from "next/font/google";
 import mainImage from "../public/images/sofia.jpg";
 import AboutImage from "../public/images/About_Image.jpg";
-import { ProjectNavbar } from "./components/navbar";
+import ProjectNavbar from "./components/navbar";
 
 export default function Home() {
   return (
