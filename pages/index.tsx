@@ -116,6 +116,11 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      <div className="mx-auto container">
+        <h1 className="font-sora text-3xl text-lightGray text-center pt-10">My Skills</h1>
+
+      </div>
     </>
   );
 }
