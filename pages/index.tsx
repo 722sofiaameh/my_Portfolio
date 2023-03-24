@@ -14,7 +14,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <ProjectNavbar />
-      <div className=" bg-pinkBackground ">
+      <div className=" bg-pinkBackground">
         <div className="pt-20 pb-20 container mx-auto flex gap-80 items-center ">
           <div className="">
             <h1 className="font-sora text-5xl  text-white text-center ">
@@ -119,6 +119,12 @@ export default function Home() {
 
       <div className="mx-auto container">
         <h1 className="font-sora text-3xl text-lightGray text-center pt-10">My Skills</h1>
+        <div>HTML</div>
+        <div>CSS</div>
+        <div>JAVASCRIPT</div>
+        <div>REACT</div>
+        <div> </div>
+
 
       </div>
     </>
