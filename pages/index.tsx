@@ -123,9 +123,7 @@ export default function Home() {
         <div>CSS</div>
         <div>JAVASCRIPT</div>
         <div>REACT</div>
-        <div> </div>
-
-
+        <div></div>
       </div>
     </>
   );
