@@ -19,7 +19,8 @@ export default function Home() {
         <div className="row s-intro__content width-sixteen-col">
           <div className="column lg-12 s-intro__content-inner grid-block grid-16">
             <div className="s-intro__content-text">
-              <h1>I'm Sophia Ameh a Frontend Developer base in Nigeria.</h1>
+              {/* <p className="text-red-500 mb-0">Hello</p> */}
+              <h1><span className="text-red-500 text-4xl">Hello</span><br></br>I'm Sophia Ameh a Frontend Developer base in Nigeria.</h1>
               <div className="s-intro__content-btns">
                 <a className="smoothscroll btn" href="#about">
                   More About Me
@@ -31,7 +32,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-<ul className="s-intro__social social-list">
+        <ul className="s-intro__social social-list">
           <li>
             <a href="#0">
               <svg
@@ -106,11 +107,7 @@ export default function Home() {
         </ul>
 
         <div className="s-intro__content-media">
-          <img
-            src="../public/images/sofia.jpg"
-            alt="image"
-            className=""
-          />
+          <img src="../public/images/sofia.jpg" alt="image" className="" />
         </div>
         <div className="s-intro__btn-download">
           <a className="btn btn--stroke" href="#0">
